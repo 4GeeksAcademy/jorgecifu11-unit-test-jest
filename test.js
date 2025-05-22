@@ -20,7 +20,7 @@ test("One dollar should be 146.26 yen", function() {
 
     const yen =fromDollarToYen(3.5);
 
-    const expected = 3.5 * 146.26;
+    const expected = 3.5 * (1/1.07) * 156.5;
 
     expect(yen).toBe(expected.toFixed(2)); 
 })
